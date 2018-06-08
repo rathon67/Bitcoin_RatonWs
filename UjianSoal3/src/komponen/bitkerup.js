@@ -19,11 +19,11 @@ class bitkerup extends Component {
 
         .then((ambilData)=>{
             console.log(ambilData.data)
-            var rup = 14000/ambilData.data 
+            var rupiah = 14000/ambilData.data 
            
-            console.log(rup)
+            console.log(rupiah)
             this.setState({
-                nilai : 'Rp' + rup*this.refs.nama.value
+                nilai : 'Rp' + rupiah*this.refs.nama.value
             })
         })
     }
